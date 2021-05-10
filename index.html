@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <!--      -->
+    <meta property="og:title"content="HTML5 CSS3 Survey Form Application"/>
+    <meta property="og:image" content="https://i.ibb.co/yh80JQb/sample7.png"/>
+    <meta name="author" content="Dobri Zhekov"/>
+    <meta name="description" property="og:description" content="HTML5 CSS3 Survey Form Application">
+    <meta property="og:description" content="HTML5 CSS3 Survey Form"/>
+    <meta property=”og:url” content="https://zhekovdobri.github.io/HTML5_CSS3_SurveyForm/"/>
+    <!--      -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="./assets/Jquey/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media_query.css">
+    
+</head>
+
+<body>
+    
+        <!-- <div class="opa" style="position: absolute;"><canvas id="canvas"></canvas></div> -->
+
+    
+    <div class="container">
+        
+
+        <section>
+            <div class="container">
+                
+                <!-- ////////////////////////// -->
+                <div class="mobile-wrap" style="position: absolute; left: 0;">
+                    <div class="mobile clearfix">
+                        <div class="header">
+                            <span class="ion-ios-navicon pull-left"><i></i></span>
+                            <span class="title">Home</span>
+                            <span class="ion-ios-search pull-right"></span>
+                            <div class="search">
+                            <form method="post">
+                                <input type="search" placeholder="Search Here" style="color: white;">
+                            </form>
+                            </div>
+                        </div>
+                        <div class="sidebar">
+                            <div class="sidebar-overlay"></div>
+                            <div class="sidebar-content">
+                                <div class="top-head">
+                                    <div class="name">Dobri Zhekov</div>
+                                    <div class="email">zhekovdobri@gmail.com</div>
+                                </div>
+                                <div class="nav-left">
+                                    <a href="#home"><span class="ion-ios-home-outline"></span> Home</a>
+                                    <a href="#alarm"><span class="ion-ios-list-outline"></span> Alarm</a>
+                                    <a href="#compose"><span class="ion-ios-compose-outline"></span> Compose</a>
+                                    <a href="#chats"><span class="ion-ios-chatboxes-outline"></span> Chats</a>
+                                    <a href="#profile"><span class="ion-ios-person-outline"></span> Profile</a>
+                                    <a href="#settings"><span class="ion-ios-gear-outline"></span> Settings</a>
+                                    <a href="#credits"><span class="ion-ios-information-outline"></span> Credits</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content alarm" >
+                            <div class="html search">
+                                <div class="title bounceInDown animated">Search Result</div>
+                                <p class="flipInX animated">Sorry,<br>no matches found for <b class="key"></b></p>
+                            </div>
+                            <div class="html welcome visible">
+                                <div class="datetime">
+                                    <div class="day lightSpeedIn animated">Thursday</div>
+                                    <div class="date lightSpeedIn animated">June 18, 2015</div>
+                                    <div class="time lightSpeedIn animated">08:00 AM</div>
+                                </div>
+                            </div>
+                            <div class="html alarm">
+                                <div class="forecast clearfix">
+                                    <div class="datetime pull-left bounceInLeft animated">
+                                        <div class="day">Thursday</div>
+                                        <div class="date">June 18, 2015</div>
+                                    </div>
+                                    <div class="temperature pull-right bounceInRight animated">
+                                        <div class="unit"><span class="ion-ios-sunny-outline"></span> 34<i>&deg;</i></div>
+                                        <div class="location">Kathmandu, Nepal</div>
+                                    </div>
+                                </div>
+                                <div class="alarm-list">
+                                    <div class="note clearfix slideInRight animated">
+                                        <div class="time pull-left">
+                                            <div class="hour">9</div>
+                                            <div class="shift">AM</div>
+                                        </div>
+                                        <div class="to-do pull-left">
+                                            <div class="title">Finish HTML Coding</div>
+                                            <div class="subject">Web UI</div>
+                                        </div>
+                                    </div>
+                                    <div class="note clearfix slideInRight animated">
+                                        <div class="time pull-left">
+                                            <div class="hour">1</div>
+                                            <div class="shift">PM</div>
+                                        </div>
+                                        <div class="to-do pull-left">
+                                            <div class="title">Lunch Break</div>
+                                            <div class="subject"></div>
+                                        </div>
+                                    </div>
+                                    <div class="note clearfix slideInRight animated" data-revert="slideOutRight">
+                                        <div class="time pull-left">
+                                            <div class="hour">3</div>
+                                            <div class="shift">PM</div>
+                                        </div>
+                                        <div class="to-do pull-left">
+                                            <div class="title">Design Stand Up</div>
+                                            <div class="subject">Hangouts</div>
+                                            <div class="user-list clearfix">
+                                                <div class="user pull-left"><img class="profil" src="https://avatars.githubusercontent.com/u/78302159?v=4"></div>
+                                                <p>Dobri Zhekov - Fullstack Developer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="html compose">
+                                <div class="forms">
+                                    <div class="group clearfix slideInRight animated">
+                                        <label class="pull-left" for="compose-time"><span class="ion-ios-time-outline"></span> Time</label>
+                                        <input class="pull-right" id="compose-time" type="time">
+                                    </div>
+                                    <div class="group clearfix slideInLeft animated">
+                                        <label class="pull-left" for="compose-date"><span class="ion-ios-calendar-outline"></span> Date</label>
+                                        <input class="pull-right" id="compose-date" type="date">
+                                    </div>
+                                    <div class="group clearfix slideInRight animated">
+                                        <label class="pull-left" for="compose-title"><span class="ion-ios-paper-outline"></span> Title</label>
+                                        <input class="pull-right" id="compose-title" type="text">
+                                    </div>
+                                    <div class="group clearfix slideInLeft animated">
+                                        <label class="visible" for="compose-detail"><span class="ion-ios-list-outline"></span> Task</label>
+                                        <textarea class="visible" id="compose-detail" rows="3"></textarea>
+                                    </div>
+                                    <div class="action flipInY animated">
+                                        <button class="btn">Compose</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="html chats">
+                                <div class="tabs-list clearfix">
+                                    <a href="#" class="tab active">Users</a>
+                                    <a href="#" class="tab">Messages</a>
+                                    <a href="#" class="tab">Groups</a>
+                                </div>
+                                <div class="active-users">
+                                    <div class="user clearfix rotateInDownLeft animated">
+                                        <div class="photo pull-left">
+                                            <img src="#">
+                                        </div>
+                                        <div class="desc pull-left">
+                                            <p class="name">Alexandra James</p>
+                                            <p class="position">Web &amp; UI Designer</p>
+                                        </div>
+                                        <div class="idle pull-right"><span class="away"></span></div>
+                                    </div>
+                                    <div class="user clearfix rotateInDownRight animated">
+                                        <div class="photo pull-left">
+                                            <img src="#">
+                                        </div>
+                                        <div class="desc pull-left">
+                                            <p class="name">John Oliver</p>
+                                            <p class="position">Front-End Developer</p>
+                                        </div>
+                                        <div class="idle pull-right"><span class="offline"></span></div>
+                                    </div>
+                                    <div class="user clearfix rotateInDownLeft animated">
+                                        <div class="photo pull-left">
+                                            <img src="#">
+                                        </div>
+                                        <div class="desc pull-left">
+                                            <p class="name">Lucas Harper</p>
+                                            <p class="position">Co-Founder</p>
+                                        </div>
+                                        <div class="idle pull-right"><span class="away"></span></div>
+                                    </div>
+                                    <div class="user clearfix rotateInDownRight animated">
+                                        <div class="photo pull-left">
+                                            <img src="#">
+                                        </div>
+                                        <div class="desc pull-left">
+                                            <p class="name">Henry Evelyn</p>
+                                            <p class="position">Sales Manager</p>
+                                        </div>
+                                        <div class="idle pull-right"><span class="online"></span></div>
+                                    </div>
+                                    <div class="user clearfix rotateInDownLeft animated">
+                                        <div class="photo pull-left">
+                                            <img src="#">
+                                        </div>
+                                        <div class="desc pull-left">
+                                            <p class="name">Liam Benjamin</p>
+                                            <p class="position">App Developer</p>
+                                        </div>
+                                        <div class="idle pull-right"><span class="online"></span></div>
+                                    </div>
+                                    <div class="user clearfix rotateInDownRight animated">
+                                        <div class="photo pull-left">
+                                            <img src="#">
+                                        </div>
+                                        <div class="desc pull-left">
+                                            <p class="name">Oto Steiner</p>
+                                            <p class="position">Project Manager</p>
+                                        </div>
+                                        <div class="idle pull-right"><span class="online"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="html settings">
+                                <div class="setting-list">
+                                    <div class="gear clearfix slideInRight animated">
+                                        <div class="title pull-left">General</div>
+                                        <div class="action pull-right"><span class="ion-ios-arrow-right"></span></div>
+                                    </div>
+                                    <div class="gear clearfix slideInLeft animated">
+                                        <div class="title pull-left"><label for="gear-notice">Notification</label></div>
+                                        <div class="action pull-right"><input id="gear-notice" class="on-off" type="checkbox"><label for="gear-notice"></label></div>
+                                    </div>
+                                    <div class="gear clearfix slideInRight animated">
+                                        <div class="title pull-left"><label for="gear-sound">Sound</label></div>
+                                        <div class="action pull-right"><input id="gear-sound" class="on-off" type="checkbox" checked><label for="gear-sound"></label></div>
+                                    </div>
+                                    <div class="gear clearfix slideInLeft animated">
+                                        <div class="title pull-left">Theme</div>
+                                        <div class="action pull-right">Standard <span class="ion-ios-arrow-right"></span></div>
+                                    </div>
+                                    <div class="gear clearfix slideInRight animated">
+                                        <div class="title pull-left">Support</div>
+                                        <div class="action pull-right"><span class="ion-ios-arrow-right"></span></div>
+                                    </div>
+                                    <div class="gear clearfix slideInLeft animated">
+                                        <div class="title pull-left">Privacy</div>
+                                        <div class="action pull-right"><span class="ion-ios-arrow-right"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="html profile">
+                                <div class="photo flipInX animated">
+                                    <img src="https://avatars.githubusercontent.com/u/78302159?v=4">
+                                    <div class="social">
+                                        <a href="#" class="soc-item soc-count-1"><span class="ion-social-facebook"></span></a>
+                                        <a href="#" class="soc-item soc-count-2"><span class="ion-social-twitter"></span></a>
+                                        <a href="#" class="soc-item soc-count-3"><span class="ion-social-github"></span></a>
+                                        <a href="#" class="soc-item soc-count-4"><span class="ion-social-pinterest"></span></a>
+                                        <a href="#" class="soc-item soc-count-5"><span class="ion-social-linkedin"></span></a>
+                                        <a href="#" class="soc-item soc-count-6"><span class="ion-social-codepen"></span></a>
+                                        <a href="#" class="soc-item soc-count-7"><span class="ion-social-skype"></span></a>
+                                        <a href="#" class="soc-item soc-count-8"><span class="ion-social-dribbble"></span></a>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <p class="heading flipInY animated">
+                                        <span class="name">Dobri Zhekov</span><span class="position">Full Stack Developer</span>
+                                    </p>
+                                    <p class="text fadeInUp animated">I'm a Full Stack Developer who is living in Norway. I have been working on various projects which are available on Git Hub. https://github.com/zhekovdobri</p>
+                                </div>
+                            </div>
+                            <div class="html credits">
+                                <div class="title flipInY animated">I have been using the following assets to build this design</div>
+                                <div class="credit-ol">
+                                    <div class="credit-li lightSpeedIn animated"><a href="https://www.google.com/fonts/specimen/Roboto" target="_blank">roboto</a> <span>for typography</span></div>
+                                    <div class="credit-li lightSpeedIn animated"><a href="https://jquery.com" target="_blank">jquery</a> <span>for design/ui</span></div>
+                                    <div class="credit-li lightSpeedIn animated"><a href="http://ionicons.com/" target="_blank">ionicons</a> <span>for icons</span></div>
+                                    <div class="credit-li lightSpeedIn animated"><a href="http://uifaces.com/authorized" target="_blank">ui faces</a> <span>for avatar</span></div>
+                                    <div class="credit-li lightSpeedIn animated"><a href="https://daneden.github.io/animate.css/" target="_blank">animate.css</a> <span>for animation</span></div>
+                                    <div class="credit-li lightSpeedIn animated"><a href="https://dribbble.com/shots/1928064-Secret-Project" target="_blank">concept of design</a> <span>for layout</span></div>
+                                    <div class="credit-li lightSpeedIn animated"><a href="https://unsplash.com/photos/6asyCyR0K1Q/download" target="_blank">unsplash.com</a> <span>for background</span></div>
+                                </div>
+                                <div class="text zoomInUp animated">I'm glad for using these resources and expecting same as time ahead</div>
+                            </div>
+                        </div>
+                        <div class="nav">
+                            <a href="#profile" class="nav-item nav-count-1"><i class="ion-ios-person-outline"></i><span class="invisible">Profile</span></a>
+                            <a href="#compose" class="nav-item nav-count-2"><i class="ion-ios-compose-outline"></i><span class="invisible">Compose</span></a>
+                            <a href="#chats" class="nav-item nav-count-3"><i class="ion-ios-chatboxes-outline"></i><span class="invisible">Chats</span></a>
+                            <a href="#alarm" class="nav-item nav-count-4"><i class="ion-ios-alarm-outline"></i><span class="invisible">Alarm</span></a>
+                            <a href="#toggle" class="mask"><i class="ion-ios-plus-empty"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //////////////////////////// -->
+                
+                <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+                    <fieldset>
+                        <!-- Form Name -->
+                        <h3>Contact Us Today!</h3>
+
+                        <!-- Text input-->
+                        
+                        <div class="form-group form-1">
+                            <label class="col-md-4 control-label">First Name</label>  
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input  name="first_name" placeholder="First Name" class="form-control form-2"  type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        
+                        <div class="form-group form-1">
+                            <label class="col-md-4 control-label" >Last Name</label> 
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input name="last_name" placeholder="Last Name" class="form-control form-2"  type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group form-1">
+                            <label class="col-md-4 control-label">E-Mail</label>  
+                            <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                    <input name="email" placeholder="E-Mail Address" class="form-control form-2"  type="text">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Text input-->
+                            
+                        <div class="form-group form-1">
+                            <label class="col-md-4 control-label">Phone #</label>  
+                            <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                    <input name="phone" placeholder="(845)555-1212" class="form-control form-2" type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                            
+                        <div class="form-group form-1">
+                            <label class="col-md-4 control-label">Address</label>  
+                            <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                    <input name="address" placeholder="Address" class="form-control form-2" type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        
+                        <div class="form-group form-1">
+                            <label class="col-md-4 control-label">City</label>  
+                            <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                    <input name="city" placeholder="city" class="form-control form-2"  type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Select Basic -->
+                        
+                        <div class="form-group form-1"> 
+                            <label class="col-md-4 control-label">State</label>
+                            <div class="col-md-4 selectContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                                    <select name="state" class="form-control form-2 selectpicker">
+                                        <option value=" " >Please select your state</option>
+                                        <option>Alabama</option>
+                                        <option>Alaska</option>
+                                        <option >Arizona</option>
+                                        <option >Arkansas</option>
+                                        <option >California</option>
+                                        <option >Colorado</option>
+                                        <option >Connecticut</option>
+                                        <option >Delaware</option>
+                                        <option >District of Columbia</option>
+                                        <option> Florida</option>
+                                        <option >Georgia</option>
+                                        <option >Hawaii</option>
+                                        <option >daho</option>
+                                        <option >Illinois</option>
+                                        <option >Indiana</option>
+                                        <option >Iowa</option>
+                                        <option> Kansas</option>
+                                        <option >Kentucky</option>
+                                        <option >Louisiana</option>
+                                        <option>Maine</option>
+                                        <option >Maryland</option>
+                                        <option> Mass</option>
+                                        <option >Michigan</option>
+                                        <option >Minnesota</option>
+                                        <option>Mississippi</option>
+                                        <option>Missouri</option>
+                                        <option>Montana</option>
+                                        <option>Nebraska</option>
+                                        <option>Nevada</option>
+                                        <option>New Hampshire</option>
+                                        <option>New Jersey</option>
+                                        <option>New Mexico</option>
+                                        <option>New York</option>
+                                        <option>North Carolina</option>
+                                        <option>North Dakota</option>
+                                        <option>Ohio</option>
+                                        <option>Oklahoma</option>
+                                        <option>Oregon</option>
+                                        <option>Pennsylvania</option>
+                                        <option>Rhode Island</option>
+                                        <option>South Carolina</option>
+                                        <option>South Dakota</option>
+                                        <option>Tennessee</option>
+                                        <option>Texas</option>
+                                        <option> Uttah</option>
+                                        <option>Vermont</option>
+                                        <option>Virginia</option>
+                                        <option >Washington</option>
+                                        <option >West Virginia</option>
+                                        <option>Wisconsin</option>
+                                        <option >Wyoming</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Text input-->
+
+                        <div class="form-group form-1">
+                            <label class="col-md-4 control-label">Zip Code</label>  
+                            <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                    <input name="zip" placeholder="Zip Code" class="form-control form-2"  type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group form-1">
+                            <label class="col-md-4 control-label">Website or domain name</label>  
+                            <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                                    <input name="website" placeholder="Website or domain name" class="form-control form-2" type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- radio checks -->
+                        <div class="form-group form-1">
+                            <label class="col-md-4 control-label">Do you have hosting?</label>
+                            <div class="col-md-4">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="hosting" value="yes" /> Yes
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="hosting" value="no" /> No
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text area -->
+                        
+                        <div class="form-group form-1">
+                            <label class="col-md-4 control-label">Project Description</label>
+                            <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                    <textarea class="form-control form-2" name="comment" placeholder="Project Description"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Success message -->
+                        <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us!</div>
+                        
+                        <!-- Button -->
+                        <div class="form-group form-1">
+                            <label class="col-md-4 control-label"></label>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+                            </div>
+                        </div>
+                        
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    
+        <!-- TABLE -->
+        <section>
+            <div class="container">
+                <table  style="background-color: rgb(139, 173, 201, 0.5);">        
+                    <thead class="thead">
+                        <tr>
+                            <th colspan="5"><h3>REGULATIONS FOR THE ADMINISTRATION OF
+                                RETIREMENT AND TERMINAL BENEFITS<br>(2017 - 2037)</h3></th>
+                        </tr>
+
+                        <tr>
+                            <th rowspan="2">YEARS OF RETIREMENT</th>   
+                            <th colspan="2">WOMEN</th>
+                            <th colspan="2">MEN</th>  
+                        </tr>
+                        <tr>
+                            <th>AGE</th>
+                            <th>LENGTH</th> 
+                            <th>AGE</th>
+                            <th>LENGTH</th>
+                        </tr>
+                    </thead>
+                    <tbody class="content">
+                        <tr>
+                            <td>2017</td>
+                            <td>61 г.</td>
+                            <td>35г. 4м</td>
+                            <td>64 г.</td>
+                            <td>38 г. 4м</td>
+                        </tr>
+                        <tr>    
+                            <td>2018</td>
+                            <td>61 г. 2м</td>
+                            <td>35 г. 6м</td>
+                            <td>64 г. 1м</td>
+                            <td>38 г. 6м</td>
+                        </tr>
+                        <tr>
+                            <td>2019</td>
+                            <td>61 г. 4м</td>
+                            <td>35 г. 8м</td>
+                            <td>64 г. 2м</td>
+                            <td>38 г. 8м</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>61 г. 6м</td>
+                            <td>35 г. 10м</td>
+                            <td>64 г. 3м</td>
+                            <td>38 г. 10м</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>61 г. 8м</td>
+                            <td>36 г.</td>
+                            <td>64 г. 4м</td>
+                            <td>39 г.</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>61 г. 10м</td>
+                            <td>36 г. 2м</td>
+                            <td>64 г. 5м</td>
+                            <td>39 г. 2м</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>62 г.</td>
+                            <td>36 г. 4м</td>
+                            <td>64 г. 6м</td>
+                            <td>39 г. 4м</td>
+                        </tr>
+                        <tr>
+                            <td>2024</td>
+                            <td>62 г. 2м</td>
+                            <td>36 г. 6м</td>
+                            <td>64 г. 7м</td>
+                            <td>39 г. 6м</td>
+                        </tr>
+                        <tr>
+                            <td>2025</td>
+                            <td>62 г. 4м</td>
+                            <td>36 г. 8м</td>
+                            <td>64 г. 8м</td>
+                            <td>39 г. 8м</td>
+                        </tr>
+                        <tr>
+                            <td>2026</td>
+                            <td>62 г. 6м</td>
+                            <td>36 г. 10м</td>
+                            <td>64 г. 9м</td>
+                            <td>39 г. 10</td>
+                        </tr>
+                        <tr>
+                            <td>2027</td>
+                            <td>62 г. 8м</td>
+                            <td>37 г. 10м</td>
+                            <td>64 г. 10м</td>
+                            <td>40 г.</td>
+                        </tr>
+                        <tr>
+                            <td>2028</td>
+                            <td>62 г. 10м</td>
+                            <td>37 г.</td>
+                            <td>64 г. 11м</td>
+                            <td>40 г.</td>
+                        </tr>
+                        <tr>
+                            <td>2029</td>
+                            <td>63 г.</td>
+                            <td>37 г. 2м</td>
+                            <td>65 г.</td>
+                            <td>40 г.</td>
+                        </tr>
+                        <tr>
+                            <td>2030</td>
+                            <td>63 г. 3м</td>
+                            <td>37 г. 4м</td>
+                            <td>65 г.</td>
+                            <td>40 г.</td>
+                        </tr>
+                        <tr>
+                            <td>2031</td>
+                            <td>63 г. 6м</td>
+                            <td>37 г. 6м</td>
+                            <td>65 г.</td>
+                            <td>40 г.</td>
+                        </tr>
+                        <tr>
+                            <td>2032</td>
+                            <td>63 г. 9м</td>
+                            <td>37 г. 8м</td>
+                            <td>65 г.</td>
+                            <td>40 г.</td>
+                        </tr>
+                        <tr>
+                            <td>2033</td>
+                            <td>64 г.</td>
+                            <td>37 г. 10м</td>
+                            <td>65 г.</td>
+                            <td>40 г.</td>
+                        </tr>
+                        <tr>
+                            <td>2034</td>
+                            <td>64 г. 3м</td>
+                            <td>37 г.</td>
+                            <td>65 г.</td>
+                            <td>40 г.</td>
+                        </tr>
+                        <tr>
+                            <td>2035</td>
+                            <td>64 г. 6м</td>
+                            <td>37 г.</td>
+                            <td>65 г.</td>
+                            <td>40 г.</td>
+                        </tr>
+                        <tr>
+                            <td>2036</td>
+                            <td>64 г. 9м</td>
+                            <td>37 г.</td>
+                            <td>65 г.</td>
+                            <td>40 г.</td>
+                        </tr>
+                        <tr>
+                            <td>2037</td>
+                            <td>65 г. г.</td>
+                            <td>37 г.</td>
+                            <td>65 г.</td>
+                            <td>40 г.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+
+        <section>
+            <div class="container">
+                <div class="calculator" style="background-color: rgb(139, 173, 201, 0.6);">
+                    <div class="input" id="input"></div>
+                    <div class="buttons">
+                    <div class="operators">
+                        <div>+</div>
+                        <div>-</div>
+                        <div>&times;</div>
+                        <div>&divide;</div>
+                    </div>
+                    <div class="leftPanel">
+                        <div class="numbers">
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        </div>
+                        <div class="numbers">
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        </div>
+                        <div class="numbers">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        </div>
+                        <div class="numbers">
+                        <div>0</div>
+                        <div>.</div>
+                        <div id="clear">C</div>
+                        </div>
+                    </div>
+                    <div class="equal" id="result">=</div>
+                    </div>
+                </div>
+                <!-- //////////////////////////////////////////// -->
+                <!-- /////////////////////////////////////////// -->
+            </div>
+        </section>
+    </div><div id="particle-canvas"></div>
+
+    <!-- Sighn Up /////////////////////////////////////////////////////////////////////////////////-->
+    <div class="signUp">
+        
+        
+        <section>
+            
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+            <form class="form-volunteer">
+                <!-- row 1 -->
+                <div class="row">
+                    <div class="col col-2">
+                        <div class="form-group">
+                            <label for="name">Name*</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col col-2">
+                        <div class="form-group">
+                            <label for="email">Email addrfess</label>
+                            <input type="email" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <!-- row 2 -->
+                <div class="row">
+                    <div class="col col-2">
+                        <div class="form-group">
+                            <label for="phone">Phone*</label>
+                            <input type="tel" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col col-2">
+                        <div class="form-group">
+                            <label for="street">Streets</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- row 3 -->
+                <div class="row">
+                    <div class="col col-2">
+                        <div class="form-group">
+                            <label for="city">City*</label>
+                            <input type="tel" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col col-2">
+                        <div class="form-group">
+                            <label for="state">State</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- row 4 -->
+                <div class="row">
+                    <div class="col col-1">
+                        <div class="form-group">
+                            <label for="phone">Phone*</label>
+                            <input type="tel" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- row 5 -->
+                <div class="row">
+                    <div class="col col-1">
+                        <p class="mb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        <div class="form-group">
+                            <input type="radio" name="contact" id="contacts-yes">
+                            <label for="contacts-yes">Yes</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="contact" id="contacts-no">
+                            <label for="contacts-no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- row 6 -->
+                <div class="row">
+                    <div class="col col-2">
+                        <!-- div.form-group>(label+(select>option*3)) -->
+                        <div class="form-group">
+                            <label for="">Meal Preference</label>
+                            <select name="" id="" class="form-control">
+                                <option value="">Preference 1</option>
+                                <option value="">Preference 2</option>
+                                <option value="">Preference 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- row 7 -->
+                <div class="row"> 
+                    <div class="col col-2">
+                        <div class="attendings">
+                            <div class="row flex-start">
+                                <div class="col">
+                                    <p  class="mb-10">Days Attendings</p>
+                                    <div class="form-group">
+                                        <input type="radio" name="week_days" id="week_days_1">
+                                        <label for="week_days_1">Sunday</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="radio" name="week_days" id="week_days_2">
+                                        <label for="week_days_2">Monday</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="radio" name="week_days" id="week_days_3">
+                                        <label for="week_days_3">Tuestday</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="radio" name="week_days" id="week_days_4">
+                                        <label for="week_days_4">Wednesday</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="radio" name="week_days" id="week_days_5">
+                                        <label for="week_days_5">Thurstday</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="radio" name="week_days" id="week_days_6">
+                                        <label for="week_days_6">Friday</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="radio" name="week_days" id="week_days_7">
+                                        <label for="week_days_7">Saturday</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p  class="mb-10">Activities Attending</p>
+                                    <div class="form-group">
+                                        <input type="radio" name="activities" id="activities_1">
+                                        <label for="activities_1">Activities 1</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="radio" name="activities" id="activities_2">
+                                        <label for="activities_2">Activities 1</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="radio" name="activities" id="activities_3">
+                                        <label for="activities_3">Activities 1</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="radio" name="activities" id="activities_4">
+                                        <label for="activities_4">Activities 1</label>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <!-- row 8 -->
+                <div class="row">
+                    <div class="col col-1">
+                        <div class="form-group">
+                            <label for="">Special requirements</label>
+                            <textarea name="" id="" class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- row 9 -->
+                <!-- div.row>div.col-1>p+(div.form-group*2>(input:radio+label)) -->
+                <div class="row">
+                    <div class="col-1">
+                        <p class="mb_10">Lorem Ipsum is simply dummy text of the pr</p>
+                        <div class="form-group">
+                            <input type="radio" name="conference" id="conference_yes">
+                            <label for="conference_yes">Yes</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="conference" id="conference_no">
+                            <label for="conference_no">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="submit" class="bnt">
+                        <input class="submit" type="button" value="Submit" >
+                        </div>
+                    </div>
+                </div>  
+            </form>
+        
+            
+        </section>
+    </div>
+    <!-- //////////////////////////////////////// -->
+                 
+    <!-- //////////////////////////////////////////// -->
+    <script src="./assets/Jquey/jquery.js"></script>
+    <script src="./assets/Jquey/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="./assets/js/forma.js"></script>
+    <script src="./assets/js/cklock.js"></script>
+    <script src="./assets/js/calculator.js"></script>
+    
+</body>
+</html>
