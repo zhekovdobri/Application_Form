@@ -18,11 +18,18 @@
 
 * _HTML_
 * _CSS_
+* _JavaScript_
 
 <br />
 
 ## Description
-The homepage is the page that often gets the most attention from design teams and customer side. It creates the first impression and gets the most views. A lot of time and effort is spent on perfecting both its visual design and content &ndash; much more than for any other page on the website. Alexandragloss business homepage is a part of Alexandragloss Brand which I created in the early of 2016. It has a modern and astonishing view. In order to put in the light and to promote the design and visual part of my project at first I used some dummy text as a placeholder. It helps people to focus on the actual layout and color styling of my desgn work. The homepage goal is to increase user traffic to the web pages that enable them to buy the product. "Alexandragloss_Homepage_Business" goal is to help other developers and designers in a way to improve their fashion projects and give them more ideas - how it can be done. My goal as а webdeveloper and designer is to create and "paint" this homepage so as to make all this possible.
+This project is a compilation of another projects. I decided to gather here five of my small projects in one place. The entire project can be regroup or used whole in another project. All parts and elements have a transparent background. The background showing the endless office corridor with a glass transparency. In order to put in the light and to promote the design and visual part of my project at first I used some dummy text as a placeholder. It helps people to focus on the actual layout and color styling of my desgn work. The project consists of the following smaller projects:
+
+* Alarm application, 
+* Contact form, 
+* Table,
+* Calculator,
+* Footer contact form.
 
 NB!: Content some dummy "Lorem Ipsum" text.   
 
